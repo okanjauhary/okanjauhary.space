@@ -1,0 +1,10 @@
+{
+  "name": "okanjauhary-blog",
+  "version": "0.0.1",
+  "description": "a personal web by Okan Jauhary",
+  "main": "index.js",
+  "repository": "https://github.com/okanjauhary/okanjauhary.space",
+  "author": "Okan Jauhary",
+  "license": "MIT",
+  "private": true
+}
