@@ -45,6 +45,10 @@ a:visited {
   color: #555;
 }
 
+.main-text p a {
+  color: #555;
+}
+
 .socials {
   list-style: none;
   display: flex;
@@ -64,6 +68,8 @@ a:visited {
 
 .socials__item a img {
   margin-right: 10px;
+  width: 20px;
+  height: 20px;
 }
 
 @media screen and (max-width: 992px) {
@@ -76,6 +82,15 @@ a:visited {
   html {
     font-size: 80%;
   }
+
+  .socials__item {
+    margin: 0 20px;
+  }
+
+  .socials__item a img {
+    width: 15px;
+    height: 15px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -85,5 +100,15 @@ a:visited {
 
   .main-text p {
     font-size: 1rem;
+  }
+
+  .socials__item {
+    margin: 0 10px;
+  }
+
+  .socials__item a img {
+    width: 10px;
+    height: 10px;
+    margin-right: 8px;
   }
 }
