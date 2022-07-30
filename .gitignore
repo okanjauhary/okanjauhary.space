@@ -7,8 +7,26 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.pnpm-debug.log*
 
-.pnp/
+/.pnp
 .pnp.js
 .env
 .vscode
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# misc
+.DS_Store
+*.pem
