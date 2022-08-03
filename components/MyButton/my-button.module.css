@@ -1,0 +1,26 @@
+.wrapper {
+  @apply bg-transparent border-none outline-none cursor-pointer relative before:content-[''] before:box-border after:content-[''] after:box-border;
+  z-index: 1;
+}
+
+.wrapper::before {
+  @apply absolute top-0 left-0 w-full h-full bg-transparent border border-solid border-primary-o-5 transition duration-500 ease-popup;
+}
+
+.wrapper::after {
+  @apply absolute top-0 left-0 w-full h-full border scale-75 opacity-0 transition duration-300 ease-popup;
+  z-index: -1;
+  background-color: rgba(var(--color-primary), 0.15);
+}
+
+.wrapper:hover::after {
+  @apply opacity-100 scale-100;
+}
+
+.wrapper:hover::before {
+  @apply opacity-0 scale-x-105 scale-y-110;
+}
+
+.content {
+  @apply font-button font-bold text-gray-400;
+}
