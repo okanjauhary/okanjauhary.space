@@ -19,13 +19,13 @@
   }
 
   ::-moz-selection {
-    background: #a4855e;
-    color: #fcf1c3;
+    background: rgb(var(--color-primary));
+    color: rgb(var(--color-tertiary));
   }
 
   ::selection {
-    background: #a4855e;
-    color: #fcf1c3;
+    background: rgb(var(--color-primary));
+    color: rgb(var(--color-tertiary));
   }
 
   p {
@@ -134,5 +134,9 @@
 
   .link-2 {
     @apply underline text-gray-700 hover:text-primary hover:no-underline;
+  }
+
+  .title-with-line {
+    @apply pt-4 font-medium relative before:content-[''] before:absolute before:top-0 before:left-0 before:h-[2px] before:w-[30px] before:bg-primary;
   }
 }

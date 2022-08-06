@@ -43,6 +43,10 @@ module.exports = {
       transitionTimingFunction: {
         popup: "cubic-bezier(0.175, 0.885, 0.32, 1.275)",
       },
+
+      translate: {
+        "2/1": "-50%",
+      },
     },
   },
   plugins: [],

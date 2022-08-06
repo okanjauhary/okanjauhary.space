@@ -18,7 +18,6 @@ const Home: NextPage = () => {
       <section className='bg-secondary'>
         <div className='sm:container mx-auto px-6 sm:px-0 flex justify-center'>
           <div className='columns-5xl py-6 sm:py-12'>
-            {/* <PostCard slug='/' thumbnail={imagePost} /> */}
             <div className='mb-10'>
               <PostImage href='/' src={imagePost} />
             </div>
@@ -31,7 +30,7 @@ const Home: NextPage = () => {
         <div className='sm:container mx-auto py-24 px-6 sm:px-0 flex justify-center'>
           <div className='columns-5xl'>
             <div className='mb-12'>
-              <h2 className='font-medium'>All Blog Postes</h2>
+              <h2 className='title-with-line'>All Blog Postes</h2>
             </div>
             {[1, 2, 3].map(i => (
               <article
