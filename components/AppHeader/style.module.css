@@ -1,0 +1,27 @@
+.menu {
+  @apply flex items-center sm:visible invisible fixed sm:static opacity-0 sm:opacity-100;
+}
+
+.menuOpen {
+  @apply flex items-center visible fixed top-0 left-0 z-40 h-screen w-full bg-tertiary justify-center flex-col opacity-100 transition duration-300;
+}
+
+.menuList {
+  @apply mx-auto translate-x-[-20%] sm:translate-x-0;
+}
+
+.menuListOpen {
+  @apply flex flex-col text-center mb-6 translate-x-0 transition duration-300 ease-popup;
+}
+
+.subscribe {
+  @apply translate-x-[20%] sm:translate-x-0;
+}
+
+.subscribeOpen {
+  @apply translate-x-0 transition duration-300 ease-popup;
+}
+
+.scrolledDown {
+  transform: translateY(-100%);
+}

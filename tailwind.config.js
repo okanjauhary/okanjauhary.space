@@ -38,6 +38,9 @@ module.exports = {
           800: "#121111",
           900: "#0a0a0a",
         },
+        "white-o": {
+          9: "rgba(255, 255, 255, 0.9)",
+        },
       },
 
       transitionTimingFunction: {

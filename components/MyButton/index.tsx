@@ -6,12 +6,13 @@ export type MyButtonVariant = "outlined" | "naked";
 export interface MyButtonProp {
   variant?: MyButtonVariant;
   small?: boolean;
+  className?: string;
 }
 
 const MyButton: React.FC<
   React.ButtonHTMLAttributes<HTMLButtonElement> & MyButtonProp
-> = ({ children, variant, small, ...props }) => {
-  const buttonClass = `${style.wrapper} ${
+> = ({ children, variant, small, className, ...props }) => {
+  const buttonClass = `${style.wrapper} ${className || ""} ${
     variant === "naked" && "before:hidden"
   } ${
     small

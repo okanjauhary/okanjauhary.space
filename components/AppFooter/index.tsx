@@ -1,7 +1,9 @@
-import MyButton from "Components/MyButton";
-import { useEffect, useState } from "react";
+import MyButtonComponent from "Components/MyButton";
+import { useEffect, useState, memo } from "react";
 import { MENU_LIST } from "Components/AppHeader";
 import Link from "next/link";
+
+const MyButton = memo(MyButtonComponent);
 
 const WORDLIST = ["website", "experience", "direction", "strategy"];
 const WORD_CHANGE_TIME = 750;

@@ -7,6 +7,7 @@ const Layout: React.FC<ComponentHasChild> = ({ children }) => {
   return (
     <div className='my-app'>
       <AppHeader />
+      <div className='h-24 sm:h-28 bg-secondary'></div>
       <main>{children}</main>
       <AppFooter />
     </div>
