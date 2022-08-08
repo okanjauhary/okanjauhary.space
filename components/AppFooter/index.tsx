@@ -37,7 +37,7 @@ const AppFooter = () => {
   return (
     <footer>
       <div className='bg-secondary'>
-        <div className='sm:container mx-auto py-16 sm:py-20 md:py-30 px-6 sm:px-0'>
+        <div className='container mx-auto py-16 sm:py-20 md:py-30 px-6 sm:px-0'>
           <div className='text-center'>
             <p className='uppercase text-gray-200 text-sm mb-8'>
               Do you like my work?
@@ -56,7 +56,7 @@ const AppFooter = () => {
       </div>
       <div className='bg-white relative'>
         <div className='before:content-[""] before:w-full before:h-1/2 before:bg-secondary before:absolute before:top-0 before:left-0'>
-          <div className='relative sm:container mx-auto px-0'>
+          <div className='relative container mx-auto px-0'>
             <div className='bg-gray-600 rounded-t-2xl'>
               <div className='mx-0 sm:mx-auto w-full sm:w-3/4 py-10 sm:py-14 md:py-20 flex justify-between flex-col sm:flex-row'>
                 <div className='left-section order-2 sm:order-1'>

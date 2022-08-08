@@ -5,7 +5,7 @@
 @layer base {
   :root {
     --color-primary: 167, 132, 87;
-    --color-secondary: 247, 250, 246; /* 246, 247, 246*/
+    --color-secondary: 247, 250, 246;
     --color-tertiary: 254, 254, 254;
   }
 
@@ -15,7 +15,6 @@
     -webkit-font-smoothing: antialiased;
     font-size: 1rem;
     line-height: 1.75;
-    overflow-x: hidden;
   }
 
   ::-moz-selection {
@@ -138,5 +137,9 @@
 
   .title-with-line {
     @apply pt-4 font-medium relative before:content-[''] before:absolute before:top-0 before:left-0 before:h-[2px] before:w-[30px] before:bg-primary;
+  }
+
+  .post-content p {
+    @apply mb-8 sm:text-lg;
   }
 }
