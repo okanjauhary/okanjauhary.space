@@ -4,7 +4,7 @@ import logo from "../../public/logo.png";
 import MyButton from "Components/MyButton";
 import { useEffect, useState, memo, useCallback, useRef } from "react";
 import style from "./style.module.css";
-import { MenuIcon, XIcon } from "@heroicons/react/outline";
+import { MenuIcon, XIcon, AcademicCapIcon } from "@heroicons/react/outline";
 
 export const MENU_LIST = [
   {
@@ -58,9 +58,9 @@ const AppHeader = () => {
 
   return (
     <header
-      className={`z-50 backdrop-blur-sm fixed w-full bg-white-o-9 transition duration-300 translate-y-0 ${headerClasses}`}
+      className={`z-50 backdrop-blur-sm fixed left-0 right-0 box-content bg-white-o-9 transition duration-300 translate-y-0 ${headerClasses}`}
     >
-      <nav className='sm:container mx-auto flex items-center p-6 sm:px-0'>
+      <nav className='container mx-auto flex items-center py-6 sm:py-10 px-6 sm:px-0'>
         <Link href='/'>
           <a className='z-50'>
             <Image src={logo} alt='Okan Jauhary' />
@@ -74,7 +74,7 @@ const AppHeader = () => {
               onClick={() => setMenuOpen(!isMenuOpen)}
             >
               {isMenuOpen ? (
-                <XIcon className='h-7 w-7' />
+                <XIcon className='h-7 w-7 text' />
               ) : (
                 <MenuIcon className='h-7 w-7' />
               )}
@@ -84,7 +84,7 @@ const AppHeader = () => {
             <div className={isMenuOpen ? style.menuListOpen : style.menuList}>
               {MENU_LIST.map((menu, i) => (
                 <Link href={menu.link} key={`navbar-menu-${i}`}>
-                  <a className={`${isMenuOpen && "block"}`}>
+                  <a className={`${isMenuOpen && "block"} mx-1`}>
                     <MyButton variant='naked'>{menu.label}</MyButton>
                   </a>
                 </Link>

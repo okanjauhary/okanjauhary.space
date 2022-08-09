@@ -12,14 +12,13 @@ const Home: NextPage = () => {
       <Head>
         <title>Okan Jauhay</title>
         <meta name='description' content='a pesonal blog by okan jauhay' />
-        <link rel='icon' href='/favicon.ico' />
       </Head>
 
       <section className='bg-secondary'>
-        <div className='sm:container mx-auto px-6 sm:px-0 flex justify-center'>
-          <div className='columns-5xl py-6 sm:py-12'>
+        <div className='container mx-auto px-6 sm:px-0 flex justify-center'>
+          <div className='py-6 sm:py-12'>
             <div className='mb-10'>
-              <PostImage href='/' src={imagePost} />
+              <PostImage href='/first-post' src={imagePost} />
             </div>
             <PostContentCard align='center' />
           </div>
@@ -27,7 +26,7 @@ const Home: NextPage = () => {
       </section>
 
       <section>
-        <div className='sm:container mx-auto py-24 px-6 sm:px-0 flex justify-center'>
+        <div className='container mx-auto py-24 px-6 sm:px-0 flex justify-center'>
           <div className='columns-5xl'>
             <div className='mb-12'>
               <h2 className='title-with-line'>All Blog Postes</h2>

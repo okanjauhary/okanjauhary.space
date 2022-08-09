@@ -22,5 +22,5 @@
 }
 
 .content {
-  @apply font-button font-bold text-gray-400;
+  @apply font-button font-bold text-gray-400 h-full inline-flex justify-center items-center;
 }
