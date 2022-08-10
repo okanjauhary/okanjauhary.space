@@ -11,6 +11,7 @@ import {
   ArchiveIcon,
   CakeIcon,
 } from "@heroicons/react/outline";
+import PageHeader from "Components/PageHeader";
 
 const DetailPost: NextPage = () => {
   return (
@@ -19,18 +20,10 @@ const DetailPost: NextPage = () => {
         <title>Detail Post</title>
       </Head>
 
-      <article className='bg-white'>
-        <div className='container mx-auto py-14 px-6 sm:px-0 flex justify-center'>
-          <div className='columns-5xl py-0 sm:py-20 text-center px-0 md:px-14'>
-            <p className='text-gray-200 uppercase mb-8 text-sm sm:text-base'>
-              03 min read
-            </p>
-            <h1 className='title-with-line before:left-1/2 before:translate-x-2/1'>
-              Stay focused by always asking yourself one key question
-            </h1>
-          </div>
-        </div>
-      </article>
+      <PageHeader
+        title='Stay focused by always asking yourself one key question'
+        subTitle='03 min read'
+      />
 
       <section className='bg-secondary relative'>
         <div className='before:content-[""] before:w-full before:h-28 before:bg-white before:absolute before:top-0 before:left-0'>
