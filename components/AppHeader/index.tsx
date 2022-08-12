@@ -8,7 +8,7 @@ import { MenuIcon, XIcon, AcademicCapIcon } from "@heroicons/react/outline";
 
 export const MENU_LIST = [
   {
-    link: "/",
+    link: "/about-me",
     label: "About",
   },
   {
